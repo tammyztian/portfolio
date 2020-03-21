@@ -1,76 +1,86 @@
 <!DOCTYPE html>
-<html lang=en>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
     <title>Tammy Tian</title>
-    <meta name="description" content="Coding communications">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="The home of a React Specialist and Modern Chinese History Enthusiast">
+    <meta name="keywords" content="JavaScript, Developer, React, Gatsby, Beijing, Chinese-American, Tammy Tian, ">
+    <meta name="author" content="Tammy Tian">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="stylesheet" href="index.css">
-    <link href="https://fonts.googleapis.com/css?family=PT+Mono|PT+Sans" rel="stylesheet">
-  </head>
-  <body>
-   
-    <header role="banner">
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
+</head>
+<body>
+<!-- Application content here -->
 
-    </header>
-    <main id="main" role="main">
+<section class="header">
+    <div class="header-bar">
+        <a  href="./tammyTianResume2020.pdf" target="_blank"><img class="logo" src="tammy.svg" /></a>
+        <img class="nav-ham-bar" src="ham-bar.svg" />
+    </div>
 
-    <div class="card-containter">
-        <!-- <img class="leaf-img" src="./leaf-img.png"> -->
-        <nav role="navigation">
-            <ul>
-              <li class="about">
-                <a href="#about"> Tammy Tian </a>
-              </li>
-              <li>
-                <li class="projects"><a href="#projects"> Projects </a></li>
-              </li>
-            </ul>
-          </nav>
-        <article role="article" id="about">
-          <div class="highlight-box">
-            <div class="content-box">
-              <div class="greeting-text">
-                <h1>Hello!</h1>
-              </div>
-              <div class="about-text">
-                <p> I am a Full-stack developer, community enganger, and
-                    wellness enthusist musing on the future of journalism.
-                </p>
-              </br>
-                <p>
-                    If you like what you see, I'd love to chat!
-                </p>
-              </div>
-            </div>
-          </div>
-        </article>
+    <div class="find-me">
+        <a  href="https://github.com/tammyztian?tab=repositories" target="_blank"><img class="find-me-icon" src="./github.svg" alt="Click to visit code samples."/></a>
+        <a  href="https://medium.com/@TianTammy" target="_blank"><img class="find-me-icon" src="./medium.svg"  alt="Click to visit writing samples."/></a>
+        <a  href=" https://www.linkedin.com/in/tiantammy/" target="_blank"><img class="find-me-icon" src="./linkedin.svg"  alt="Click to visit writing samples."/></a>
+      
+
        
-        <article role="article" id="projects">
-            <div class="header">
-                <h1> Projects </h1>
-            </div>
-            <div class="highlight-box">
-              <div class="content-box">
-                <div class="greeting-text">
-                  <h1>Hello!</h1>
-                </div>
-                <div class="about-text">
-                  <p> I am a Full-stack developer, community enganger, and
-                      wellness enthusist musing on the future of journalism.
-                  </p>
-                </br>
-                  <p>
-                      If you like what you see, I'd love to chat!
-                  </p>
-                </div>
-              </div>
-            </div>
-          </article>
-     
-    </main>
-    <footer class="footer" role="contentinfo">Copyright Tammy Tian 2018</footer>
-    <script src="index.js" async defer></script>
-  </body>
+    </div>
+    <a  href="./tammyTianResume2020.pdf" target="_blank" class="resume">Resume</a>
+</section>
+
+<section class="message-1">
+
+
+    <div class="about">
+        <div class="about-text">
+            <h1>
+                Hi, I<span class="special-touch">'</span>m Tammy.
+                <br>
+                <br>
+                I write <span class="special-touch">prose</span> and <span class="special-touch">code</span>.
+                <br>
+                <br>
+                Lately I've been <span class="special-touch">musing</span> about...
+            </h1>
+        </div>
+
+        <div class="about-img">
+          <img class="smile" src="smile.svg"/> <img class="heart" src="heart.svg">
+      </div>
+
+
+    </div>
+
+    <img class="path" src="path.svg" />
+
+</section>
+
+
+
+
+
+
+
+<section class="message mini-blog">
+
+  <div id="medium-widget"></div>
+    <script src="https://medium-widget.pixelpoint.io/widget.js"></script>
+    <script>MediumWidget.Init({renderTo: '#medium-widget', params: {"resource":"https://medium.com/@TianTammy","postsPerLine":1,"limit":3,"picture":"none","fields":["description","publishAt"],"ratio":"landscape"}})</script>
+
+
+</section>
+
+
+
+<!-- Google Analytics -->
+
+<script>
+    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+    ga('create', 'https://www.tammytian.com/', 'auto'); ga('send', 'pageview')
+</script>
+<script src="https://www.google-analytics.com/analytics.js" async defer></script>
+</body>
 </html>

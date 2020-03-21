@@ -1,180 +1,214 @@
-/* styling reset */
-html, body, div, span, h1, h2, h3, p, a, img, 
-strike, i, center, ol, ul, li, fieldset, form, 
-label, article, aside,  footer, header, nav, section  
-{
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article,footer, header, menu, nav, section {
-	display: block;
-}
-*{
-  box-sizing: border-box;
+/*
+ * Reset some styles.
+ */
 
-}
-html, body {
-  height:100%;
-  margin:0;
+ html {
+    background-color: #ffffff;
+    font-size: 1em;
+    line-height: 1.4;
 }
 
-body{
-  background-color:#689E81;
-  /* font-family: 'PT Mono', monospace; */
-  font-family: 'Californian FB';
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
 }
 
-.card-containter{
-  position: relative;
-  background-color: #1E352E;
-  /* height: 90vh; */
-  width: 90vw;
-  margin: 10px auto;
-  box-shadow: 10px 10px 15px rgb(44, 44, 44);
-  background-image: url("./leaf-img.png");
-  background-position: left center; 
-
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
 }
 
-
-
-.highlight-box{
-  border: 1.0px solid #689E81;
-  margin: 40px auto;
-  height: 60vh;
-  width: 60vw;
-  z-index: 3;
-  background-color: rgb(0, 0, 0, .2); 
+a {
+    color:  #C41616;;
 }
-
-img{
-  max-width: 100%;
-  max-height: 100%;
-  z-index: -5;
-}
-
-.footer, .push{
-  height: 5vh;     
-  font-family: 'PT Sans', sans-serif;
-  text-align: center;
-  color: whitesmoke;
-  font-size: 10px;
-
-}
-
-.greeting-text {
-  text-align: center;
-}
-
-h1{
-  font-size: 1.2em;
-  font-family: 'Californian FB';
-  font-weight: 700;
-  margin-top: 50px;
-  margin-bottom: 29px;
-}
-
-.about-text{
-  margin:auto;
-  padding: 10px;
-}
-
-h2{
-  font-size: .8em;
-  font-family: 'Californian FB';
-
-}
-
-a{
-  color:  #71c299;
-  font-family:  'Californian FB';
-  text-decoration: none
-}
-
-a:hover{
-  color: rgb(170, 170, 170);;
-}
-
 a:visited{
-  color:  rgb(255, 255, 255);
-  text-decoration: underline;
+    color: #767676;
 }
 
-ol, ul {
-  list-style: none;
-}
 
-nav{
-  background-color: #335f46;
-  width: 100%;
-  height: 50px;
-  text-align: right;
-  padding-top: 1em;
-  padding-left: 1.5em;
-  z-index: 2;
-}
-nav ul{
-  display: flex;
-  justify-content: space-between;
+body {
+    font-family: 'Inconsolata', monospace;
+    color: #494141;
+    margin:30px;
 
 }
-nav li{
-  padding-right: 1.5em;
+
+
+/* ========================= Header Styling ========================= */
+
+
+.header {
+    width: 100%;
+
 }
+
+.header-bar{
+    display: inline-flex;
+    justify-content: space-between;
+    width:100%;
+}
+
+.header .nav-ham-bar{
+    width: 35px;
+    display: none;
+
+}
+
+.header .logo{
+    height: 76px;
+}
+
+
+.header .find-me-icon{
+    width: 15px;
+    padding: 3px;
+}
+
+.header .resume{
+    text-decoration: none;
+    color: #C41616;
+    padding-left: 13px;
+}
+
+
+
+@media all and (min-width: 700px){
+    .header .nav-ham-bar {
+        width: 40px;
+    }
+
+
+    .header .find-me-icon{
+        padding: 2px;
+        width: 20px;
+    }
+
+}
+
+/* ========================= Main Page ========================= */
+
 
 .about{
-  float: left;
+    padding-top: 50px;
 }
 
-.projects{
-  margin-left: auto;
+
+.message-1{
+    text-align: center;
+    height: 85vh;
 }
 
-main {
-  line-height: 1;
-  color: #ffffff;
-  align-content: center;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 10px;
-}
-
-article{
-  padding-bottom: 10px;
-}
-
-#about .profile-photo{
-  width: 200px;
-  display: inherit;
-  align-content: center;
-  margin-left: auto;
-  margin-right: auto;
-  padding-right: 20px;
-
+.message-1 .construction{
+    font-size: 35px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 
 }
 
-#about{
-  height: 85vh;
+
+
+.message-1 .about-text{
+
+    text-align: left;
+    margin: 0 auto;
+    font-family: Rounded Mplus 1 c;
+    font-style: normal;
+    font-weight: normal;
+    line-height: normal;
+    font-size: 10.5px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    display: inline-flex;
 }
 
-.header{
-  background-color: #335f46;
-  width: 100%;
-  height:50px;
-  text-align: center;
+
+.special-touch{
+    color: #C41616;
 }
 
-.header h1 {
- padding-top: 1em;
- margin-top: 0;
+
+.message-1 .smile{
+    position: relative;
+    width: 74px;
+    top: -115px;
+    right:-115px;
 }
 
-#projects {
-  height: 100vh;
+.message-1 .heart{
+    position: relative;
+    top: -135px;
+    left: -13px;
+    width: 40px;
+}
+
+.message-1 .path{
+    position: relative;
+    width:130px;
+    left: 32px;
+    top: -80px;
+}
+
+
+
+
+@media all and (min-width: 800px) {
+    .header .logo{
+        height: 88px;
+    }
+    .header .resume{
+        text-decoration: none;
+        color: #C41616;
+        padding-left: 22px;
+    }
+    .message-1 .about{
+        display: inline-flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .message-1 .about-text{
+        font-size: 18px;
+    }
+
+    .message-1 .smile{
+        width: 150px;
+        left:-60px;
+        top: unset;
+    }
+
+    .message-1 .heart{
+        top: -50px;
+        left:-60px;
+        width: 70px;
+    }
+
+    .message-1 .path{
+        width: 175px;
+        left: -30px;
+        top: 15px;
+    }
+
+
+
+}
+
+
+/* ========================= Mini Blog Styling =================== */
+
+.mini-blog{
+    padding: 10px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+
+@media all and (min-width: 700px){
+   body {
+       margin:50px auto;
+       max-width: 760px;
+   }
+
 }
