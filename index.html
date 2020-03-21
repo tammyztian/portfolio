@@ -8,13 +8,15 @@
     <meta name="author" content="Tammy Tian">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    
     <link rel="stylesheet" href="index.css">
     <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
 </head>
 <body>
 <!-- Application content here -->
+<div class="wrapper">
 
-<section class="header">
+  <section class="header">
     <div class="header-bar">
         <a  href="./tammyTianResume2020.pdf" target="_blank"><img class="logo" src="tammy.svg" /></a>
         <img class="nav-ham-bar" src="ham-bar.svg" />
@@ -26,61 +28,64 @@
         <a  href=" https://www.linkedin.com/in/tiantammy/" target="_blank"><img class="find-me-icon" src="./linkedin.svg"  alt="Click to visit writing samples."/></a>
       
 
-       
+        
     </div>
     <a  href="./tammyTianResume2020.pdf" target="_blank" class="resume">Resume</a>
-</section>
+  </section>
 
-<section class="message-1">
+  <section class="message-1" id="1">
+     <div class="about">
+          <div class="about-text">
+              <h1>
+                  Hi, I<span class="special-touch">'</span>m Tammy.
+                  <br>
+                  <br>
+                  I write <span class="special-touch">prose</span> and <span class="special-touch">code</span>.
+                  <br>
+                  <br>
+                  Lately I've been <span class="special-touch">musing</span> about...
+              </h1>
+          </div>
 
-
-    <div class="about">
-        <div class="about-text">
-            <h1>
-                Hi, I<span class="special-touch">'</span>m Tammy.
-                <br>
-                <br>
-                I write <span class="special-touch">prose</span> and <span class="special-touch">code</span>.
-                <br>
-                <br>
-                Lately I've been <span class="special-touch">musing</span> about...
-            </h1>
+          <div class="about-img">
+            <img class="smile" src="smile.svg"/> <img class="heart" src="heart.svg">
         </div>
 
-        <div class="about-img">
-          <img class="smile" src="smile.svg"/> <img class="heart" src="heart.svg">
+
       </div>
+
+      <img class="path" src="path.svg" />
+
+  </section>
+
+
+
+
+
+
+
+  <section class="message mini-blog" id="2">
+
+    <div id="medium-widget">
+      <!--Content pulled from medium-->
+      <script src="https://medium-widget.pixelpoint.io/widget.js"></script>
+      <script>MediumWidget.Init({renderTo: '#medium-widget', params: {"resource":"https://medium.com/@TianTammy","postsPerLine":1,"limit":3,"picture":"none","fields":["description","publishAt"],"ratio":"landscape"}})</script>
 
 
     </div>
+     
 
-    <img class="path" src="path.svg" />
-
-</section>
-
-
-
-
-
-
-
-<section class="message mini-blog">
-
-  <div id="medium-widget"></div>
-    <script src="https://medium-widget.pixelpoint.io/widget.js"></script>
-    <script>MediumWidget.Init({renderTo: '#medium-widget', params: {"resource":"https://medium.com/@TianTammy","postsPerLine":1,"limit":3,"picture":"none","fields":["description","publishAt"],"ratio":"landscape"}})</script>
-
-
-</section>
+  </section>
 
 
 
 <!-- Google Analytics -->
 
-<script>
-    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
-    ga('create', 'https://www.tammytian.com/', 'auto'); ga('send', 'pageview')
-</script>
-<script src="https://www.google-analytics.com/analytics.js" async defer></script>
-</body>
+    <script>
+        window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+        ga('create', 'https://www.tammytian.com/', 'auto'); ga('send', 'pageview')
+    </script>
+    <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+    </div>
+  </body>
 </html>
